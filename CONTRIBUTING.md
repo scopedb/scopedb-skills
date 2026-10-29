@@ -23,6 +23,16 @@ Run all verification commands before submitting a pull request.
 
 ## Tests and continuous integration
 
+### Runtime compatibility and releases
+
+The skill supports stable `scope` CLI `0.2.x` releases and ScopeView `>=0.1.1 <0.2.0`. These ranges express a ScopeDB compatibility policy, not a stability guarantee supplied by SemVer for `0.x` software. Compatible runtime patches normally need no skill change; changes to supported contracts or instructions do.
+
+Before recommending a runtime patch, verify the skill's existing workflows against the candidate artifact: CLI flags, authentication/workspace behavior, JSON shape, exact numeric output, and success/error handling; ScopeView document validation, HTML export, exact readings, NULL/zero handling, and the documented Node.js requirement. Use synthetic inputs and an isolated test environment. An incompatible change requires a new compatibility line and coordinated skill guidance rather than relying on an agent to infer the new contract from help output.
+
+When changing a supported line, document the replacement and migration steps and link the runtime project's published support policy, including the old line's support end date and which fixes will be backported. Do not promise indefinite support for an old runtime or assume its availability guarantees continued compatibility with the hosted service. Keep the skill and marketplace version bump in the same release as the updated guidance.
+
+### Repository checks
+
 `scripts/check.mjs` and `tests/check.test.mjs` verify frontmatter rules, file restrictions, local Markdown link resolution, and optional `agents/openai.yaml` metadata offline without database credentials, ScopeView, or model calls. `.github/workflows/ci.yml` runs `pnpm lint`, `pnpm check`, and `pnpm test` on pull requests and `main` pushes.
 
 Keep local scratch files and test artifacts in ignored `.local/` or `/tmp`, and never commit credentials, private endpoints, or customer query results.

@@ -117,7 +117,7 @@ Automatic invocation is enabled where supported. Replies and chart prose follow 
 
 The [entry](skills/scopedb/SKILL.md) selects a capability; its guide links the documentation or CLI usage details needed for that task. Query, language, and visualization are internal modules of the same skill. The installed files are instructions, references, and optional host metadata. Loading them starts no connection and installs no software.
 
-Queries prefer the official `scope` CLI (`0.2.x`) and reuse its current workspace and authentication. Installation and login follow the [official CLI guide](https://www.scopedb.io/docs/developer/scopedb-cli). Charts can use [`@scopedb/scopeview@0.1`](skills/scopedb/references/visualize/runtime.md) on demand; its CLI needs Node.js 24+ and npm. Saved results need no database connection. Complete HTML is the default delivery, with inline display only when the host explicitly supports it.
+Queries prefer the official `scope` CLI (`0.2.x`) and reuse its current workspace and authentication. First-time installation selects a stable release within that line; an existing CLI outside it requires compatibility verification before use. See the [CLI workflow](skills/scopedb/references/query/cli.md). Charts can use [`@scopedb/scopeview@~0.1.1`](skills/scopedb/references/visualize/runtime.md) on demand, selecting one exact version for the task; its CLI needs Node.js 24+ and npm. Saved results need no database connection. Complete HTML is the default delivery, with inline display only when the host explicitly supports it.
 
 ## License
 
