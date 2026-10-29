@@ -1,0 +1,6 @@
+interface:
+  display_name: "ScopeDB"
+  short_description: "Query ScopeDB, write ScopeQL and visualize results"
+  default_prompt: "Use $scopedb to help with my ScopeDB or ScopeQL task, loading only the query, language or visualization references needed."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "scopedb-skills",
+  "owner": {
+    "name": "ScopeDB",
+    "url": "https://www.scopedb.io"
+  },
+  "metadata": {
+    "description": "Official ScopeDB Agent Skill for querying ScopeDB, writing ScopeQL, and visualizing results.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "scopedb",
+      "description": "Connect to and query ScopeDB, write or debug ScopeQL, maintain reusable analysis context, and visualize results as interactive charts.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/scopedb"],
+      "version": "0.1.0",
+      "author": {
+        "name": "ScopeDB",
+        "url": "https://www.scopedb.io"
+      },
+      "homepage": "https://www.scopedb.io",
+      "repository": "https://github.com/scopedb/scopedb-skills",
+      "license": "Apache-2.0",
+      "keywords": [
+        "scopedb",
+        "scopeql",
+        "scopeview",
+        "database",
+        "analytics",
+        "observability",
+        "charts"
+      ],
+      "category": "database"
+    }
+  ]
+}

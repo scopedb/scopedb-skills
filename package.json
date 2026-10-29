@@ -1,0 +1,21 @@
+{
+  "name": "scopedb-skills",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@11.0.4",
+  "scripts": {
+    "lint": "biome format . && biome lint . --error-on-warnings",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/check.test.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.11",
+    "yaml": "2.9.1"
+  },
+  "description": "ScopeDB Agent Skill instructions and references."
+}
