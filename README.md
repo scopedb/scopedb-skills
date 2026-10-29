@@ -90,7 +90,7 @@ First move the existing installation to a backup outside all skill directories,
 then reinstall into the same parent directory. Keep the backup and any local edits.
 ```
 
-The examples above follow `main`. Stable versions will be managed through GitHub tags. Once a tag is published, use the GitHub skill URL with that tag in place of `main` with either installer. A pinned installation stays on that ref; to move to a newer tag, select the new tag explicitly when reinstalling.
+The examples above follow `main`, which can contain unreleased changes. Formal releases are identified by `vX.Y.Z` GitHub tags; making the repository public does not release a version. Once a tag is published, use the GitHub skill URL with that tag in place of `main` with either installer. A pinned installation stays on that ref; to move to a newer tag, select the new tag explicitly when reinstalling. See [RELEASE.md](RELEASE.md) for versioning and development-installation behavior.
 
 ## Capabilities
 
