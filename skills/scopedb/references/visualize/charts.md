@@ -1,6 +1,6 @@
 # Chart selection and public documents
 
-Use ScopeView's version-1 document contract. The examples below are complete synthetic documents accepted by `@scopedb/scopeview@0.1`. See [results](results.md) for lossless result conversion and [rendering](runtime.md) for the public schema and CLI validator.
+Use ScopeView's version-1 document contract. The examples below are complete synthetic documents verified with `@scopedb/scopeview@0.1.1`. See [results](results.md) for lossless result conversion and [rendering](runtime.md) for the supported version range, public schema, and CLI validator.
 
 | Question                              | Chart             | Conditions                                                             |
 | ------------------------------------- | ----------------- | ---------------------------------------------------------------------- |

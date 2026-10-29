@@ -8,7 +8,7 @@ This repository publishes the official ScopeDB [Agent Skill](https://agentskills
 - Keep `skills/scopedb/SKILL.md` focused on task routing and shared guardrails, loading detailed references on demand.
 - Keep the installed skill directory instruction-only: `SKILL.md`, Markdown references under `references/`, and optional host metadata at `agents/openai.yaml`. Do not add executable scripts, runtime lockfiles, build artifacts, or symlinks inside `skills/scopedb/`.
 - Delegate live queries to the official `scope` CLI, language reference details to official ScopeDB documentation, and chart validation/rendering to public `@scopedb/scopeview` releases.
-- Keep `package.json` and `.claude-plugin/marketplace.json` (`metadata.version` and `plugins[0].version`) at the same `X.Y.Z` version, and bump that version whenever changes under `skills/scopedb/` are shipped so Claude Code plugin caches receive the update.
+- Keep `package.json` and `.claude-plugin/marketplace.json` (`metadata.version` and `plugins[0].version`) at the same `X.Y.Z` version. Follow [RELEASE.md](RELEASE.md): a version is released when its `vX.Y.Z` tag is published; changes before that release retain the candidate version rather than incrementing it per pull request.
 
 ## Markdown
 

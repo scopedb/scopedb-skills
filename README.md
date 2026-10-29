@@ -90,7 +90,7 @@ First move the existing installation to a backup outside all skill directories,
 then reinstall into the same parent directory. Keep the backup and any local edits.
 ```
 
-The examples above follow `main`. Stable versions will be managed through GitHub tags. Once a tag is published, use the GitHub skill URL with that tag in place of `main` with either installer. A pinned installation stays on that ref; to move to a newer tag, select the new tag explicitly when reinstalling.
+The examples above follow `main`, which can contain unreleased changes. Formal releases are identified by `vX.Y.Z` GitHub tags; making the repository public does not release a version. Once a tag is published, use the GitHub skill URL with that tag in place of `main` with either installer. A pinned installation stays on that ref; to move to a newer tag, select the new tag explicitly when reinstalling. See [RELEASE.md](RELEASE.md) for versioning and development-installation behavior.
 
 ## Capabilities
 
@@ -117,7 +117,7 @@ Automatic invocation is enabled where supported. Replies and chart prose follow 
 
 The [entry](skills/scopedb/SKILL.md) selects a capability; its guide links the documentation or CLI usage details needed for that task. Query, language, and visualization are internal modules of the same skill. The installed files are instructions, references, and optional host metadata. Loading them starts no connection and installs no software.
 
-Queries prefer the official `scope` CLI (`0.2.x`) and reuse its current workspace and authentication. Installation and login follow the [official CLI guide](https://www.scopedb.io/docs/developer/scopedb-cli). Charts can use [`@scopedb/scopeview@0.1`](skills/scopedb/references/visualize/runtime.md) on demand; its CLI needs Node.js 24+ and npm. Saved results need no database connection. Complete HTML is the default delivery, with inline display only when the host explicitly supports it.
+Queries prefer the official `scope` CLI (`0.2.x`) and reuse its current workspace and authentication. Installation and login follow the [CLI workflow](skills/scopedb/references/query/cli.md) and [official CLI guide](https://www.scopedb.io/docs/developer/scopedb-cli). Charts can use [`@scopedb/scopeview@~0.1.1`](skills/scopedb/references/visualize/runtime.md) on demand; its CLI needs Node.js 24+ and npm. Saved results need no database connection. Complete HTML is the default delivery, with inline display only when the host explicitly supports it.
 
 ## License
 
